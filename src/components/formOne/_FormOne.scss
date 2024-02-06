@@ -1,0 +1,46 @@
+form {
+    background-color: #CEDCDF;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    .formBox {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+
+        input {
+            min-width: 300px;
+        }
+    }
+
+    .d-grid {
+        .btn-success {
+            margin: 1rem;
+        }
+    }
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+
+    img {
+        // width: 50vh;
+        height: 50vh;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-primary {
+        background-color: #F9A136;
+        margin-bottom: 3rem;
+    }
+}

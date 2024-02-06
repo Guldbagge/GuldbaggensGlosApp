@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: (#194C67);
+    background-color: #F9A136;
+    height: 100px;
+   
+
+    .logo{
+        margin-right: 0,5em;
+       img{
+        height: 75px;
+        border-radius: 3rem;
+       }
+    }
+    h1{
+        margin-left:  1rem;
+        // color: #F9A136;
+        color: (#194C67);
+        font-size: 1.5rem;
+    }
+}

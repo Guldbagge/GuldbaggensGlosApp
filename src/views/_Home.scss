@@ -1,0 +1,39 @@
+
+main{
+    .wrapper{
+        background-color:(#CEDCDF);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding: 1rem;
+        
+        .btn-primary{
+            background-color: (#194C67);
+            border: #194C67;
+            margin: 1rem;
+            
+        }
+
+    
+        .carousel{
+            width: 90dvw;
+            // height: 300px;
+            // object-fit: cover;
+            // margin-top: 1rem;
+            // margin-bottom: 1rem;
+            
+            
+            
+            img{
+                width: 600px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 1rem;
+                
+            }
+        }
+
+    }
+}

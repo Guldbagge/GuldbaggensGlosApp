@@ -1,0 +1,104 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #194C67;
+  color: azure;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9A136;
+  height: 100px;
+}
+.header .logo {
+  margin-right: 0, 5em;
+}
+.header .logo img {
+  height: 75px;
+  border-radius: 3rem;
+}
+.header h1 {
+  margin-left: 1rem;
+  color: #194C67;
+  font-size: 1.5rem;
+}
+
+form {
+  background-color: #CEDCDF;
+}
+form h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+form .formBox {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+}
+form .formBox input {
+  min-width: 300px;
+}
+form .d-grid .btn-success {
+  margin: 1rem;
+}
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.alert img {
+  height: 50vh;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.alert .btn-primary {
+  background-color: #F9A136;
+  margin-bottom: 3rem;
+}
+
+main .wrapper {
+  background-color: #CEDCDF;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+}
+main .wrapper .btn-primary {
+  background-color: #194C67;
+  border: #194C67;
+  margin: 1rem;
+}
+main .wrapper .carousel {
+  width: 90dvw;
+}
+main .wrapper .carousel img {
+  width: 600px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
