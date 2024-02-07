@@ -61,7 +61,7 @@ const Home = () => {
               ))}
             </Carousel>
           </div>
-
+         
         </div>
       </main>
       <Footer />

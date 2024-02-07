@@ -1,12 +1,19 @@
+@charset "UTF-8";
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #194C67;
-  color: azure;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
+  display: none; /* Dölj fottern som standard */
+}
+@media (min-width: 1200px) {
+  .footer {
+    position: fixed; /* Fäst fottern till botten av fönstret */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #194C67;
+    color: azure;
+    height: 60px;
+    width: 100%;
+  }
 }
 
 .header {
@@ -17,7 +24,7 @@
   height: 100px;
 }
 .header .logo {
-  margin-right: 0, 5em;
+  margin-right: 0.5em;
 }
 .header .logo img {
   height: 75px;
@@ -27,6 +34,17 @@
   margin-left: 1rem;
   color: #194C67;
   font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .header {
+    height: 70px; /* Ändra höjden på headern till 50px när skärmstorleken är under 1200px */
+  }
+  .header .logo img {
+    height: 60px; /* Ändra höjden på loggan när skärmstorleken är under 1200px */
+  }
+  .header h1 {
+    font-size: 1.2rem; /* Ändra fontstorleken på h1 när skärmstorleken är under 1200px */
+  }
 }
 
 form {
@@ -73,23 +91,49 @@ main .wrapper {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   padding: 1rem;
 }
-main .wrapper .btn-primary {
+@media (min-width: 1200px) {
+  main .wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  main .wrapper .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+main .wrapper .btn .btn-primary {
   background-color: #194C67;
   border: #194C67;
   margin: 1rem;
 }
 main .wrapper .carousel {
-  width: 90dvw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 1200px) {
+  main .wrapper .carousel {
+    width: 40dvw;
+  }
 }
 main .wrapper .carousel img {
-  width: 600px;
-  height: 300px;
+  width: 90dvw;
+  height: 60dvw;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem;
+}
+@media (min-width: 1200px) {
+  main .wrapper .carousel img {
+    width: 40dvw;
+    height: 30dvw;
+  }
 }
 
 html, body {

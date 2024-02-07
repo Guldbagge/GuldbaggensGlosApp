@@ -2,22 +2,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: (#194C67);
     background-color: #F9A136;
     height: 100px;
-   
 
-    .logo{
-        margin-right: 0,5em;
-       img{
-        height: 75px;
-        border-radius: 3rem;
-       }
+    .logo {
+        margin-right: 0.5em;
+
+        img {
+            height: 75px;
+            border-radius: 3rem;
+        }
     }
-    h1{
-        margin-left:  1rem;
-        // color: #F9A136;
-        color: (#194C67);
+
+    h1 {
+        margin-left: 1rem;
+        color: #194C67;
         font-size: 1.5rem;
+    }
+
+    @media (max-width: 1200px) {
+        height: 70px; /* Ändra höjden på headern till 50px när skärmstorleken är under 1200px */
+        
+        .logo img {
+            height: 60px; /* Ändra höjden på loggan när skärmstorleken är under 1200px */
+        }
+
+        h1 {
+            font-size: 1.2rem; /* Ändra fontstorleken på h1 när skärmstorleken är under 1200px */
+        }
     }
 }
