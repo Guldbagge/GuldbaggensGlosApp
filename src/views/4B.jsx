@@ -1,12 +1,12 @@
 import React from 'react'
-import Form46 from '../components/formOne/Form46'
+import FyraB from '../components/formOne/4B'
 import Headers from '../components/header/Headers'
 
 const quiz = () => {
   return (
     <div>
         <Headers/>
-        <Form46/>
+        <FyraB/>
     </div>
   )
 }

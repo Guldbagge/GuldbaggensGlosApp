@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client'; // Uppdatera importen här
 import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import './app.css';
 import Home from './views/Home.jsx';
-import Quiz46 from './views/Quiz46.jsx';
-import Quiz47 from './views/Quiz47.jsx';
+import FyraB from './views/4B.jsx';
+import SexB from './views/6B.jsx';
 
 const root = document.getElementById('root');
 
@@ -15,8 +15,8 @@ rootElement.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/quiz46' element={<Quiz46 />} />
-        <Route path='/quiz47' element={<Quiz47 />} />
+        <Route path='/4b' element={<FyraB />} />
+        <Route path='/6b' element={<SexB />} />
         {/* <Route path='*' element={<PageNotFound />} /> */}
       </Routes>
     </BrowserRouter>

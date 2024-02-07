@@ -47,8 +47,8 @@ const Home = () => {
             </Carousel>
           </div>
           <div className='btn'>
-          <Link to="/quiz46" className="btn btn-primary">Glosor 4B</Link>
-          <Link to="/quiz47" className="btn btn-primary">Glosor 6B</Link>
+          <Link to="/4b" className="btn btn-primary">Glosor 4B</Link>
+          <Link to="/6b" className="btn btn-primary">Glosor 6B</Link>
           
           </div>
 
