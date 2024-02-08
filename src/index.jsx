@@ -5,6 +5,7 @@ import './app.css';
 import Home from './views/Home.jsx';
 import FyraB from './views/4B.jsx';
 import SexB from './views/6B.jsx';
+import Spanish from './views/Spanish.jsx';
 
 const root = document.getElementById('root');
 
@@ -17,6 +18,7 @@ rootElement.render(
         <Route path='/' element={<Home />} />
         <Route path='/4b' element={<FyraB />} />
         <Route path='/6b' element={<SexB />} />
+        <Route path='/Spanish' element={<Spanish />} />
         {/* <Route path='*' element={<PageNotFound />} /> */}
       </Routes>
     </BrowserRouter>

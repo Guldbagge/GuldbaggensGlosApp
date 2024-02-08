@@ -14,7 +14,7 @@ const Home = () => {
   const glosaSevenExpression = "season";
   const glosaEightExpression = "blow";
   const glosaNineExpression = "grow";
-  const glosaTenExpression = "pass";
+  const glosaTenExpression = "throw";
   const glosaElevenExpression = "window";
   const glosaTwelveExpression = "inside";
   const glosaThirteenExpression = "watch";
@@ -179,9 +179,9 @@ const Home = () => {
         {renderInputField('glosaEleven', 'fönster')}
         {renderInputField('glosaTwelve', 'inomhus')}
         {renderInputField('glosaThirteen', 'titta')}
-        {renderInputField('glosaFourteen', 'window')}
+        {/* {renderInputField('glosaFourteen', 'window')}
         {renderInputField('glosaFifteen', 'inside')}
-        {renderInputField('glosaSixteen', 'watch')}
+        {renderInputField('glosaSixteen', 'watch')} */}
 
 
         <div className="d-grid">
