@@ -5,19 +5,20 @@ import { Link } from 'react-router-dom';
 import Cat from '../../assets/image/spanish.jpg';
 
 const Home = () => {
-  const glosaOneExpression = "Que tiempo hace?";
-  const glosaTwoExpression = "enero";
-  const glosaTreeExpression = "febrero";
-  const glosaFourExpression = "marzo";
-  const glosaFiveExpression = "abril";
-  const glosaSixExpression = "mayo";
-  const glosaSevenExpression = "junio";
-  const glosaEightExpression = "julio";
-  const glosaNineExpression = "agosto";
-  const glosaTenExpression = "septiembre";
-  const glosaElevenExpression = "octubre";
-  const glosaTwelveExpression = "noviembre";
-  const glosaThirteenExpression = "diciembre";
+  const glosaOneExpression = "lunes";
+  const glosaTwoExpression = "martes";
+  const glosaTreeExpression = "miércoles";
+  const glosaFourExpression = "jueves";
+  const glosaFiveExpression = "viernes";
+  const glosaSixExpression = "sábado";
+  const glosaSevenExpression = "domingo";
+  const glosaEightExpression = "día de semana";
+  const glosaNineExpression = "día laborable";
+  const glosaTenExpression = "fin de semana";
+  const glosaElevenExpression = "día feriado";
+  const glosaTwelveExpression = "día festivo";
+  const glosaThirteenExpression = "día laboral";
+  
 
   // Regular expressions for form validation
   const regexExpressions = {
@@ -135,7 +136,7 @@ const Home = () => {
   return (
     <>
       <form onSubmit={handleSubmit} noValidate>
-        <h1>Glosor v 7</h1>
+        <h1>Glosor v 10</h1>
         {isSubmitted && (
           <div className="alert alert-success" tabIndex={-1} ref={successAlertRef} onFocus={() => successAlertRef.current.focus()}>
             <img src={Cat} alt="" />
@@ -144,19 +145,20 @@ const Home = () => {
         )}
         <p className='errorMessage'>{errorMessage}</p>
 
-        {renderInputField('glosaOne', 'Hur är vädret?')}
-        {renderInputField('glosaTwo', 'januari')}
-        {renderInputField('glosaTree', 'februari')}
-        {renderInputField('glosaFour', 'mars')}
-        {renderInputField('glosaFive', 'april')}
-        {renderInputField('glosaSix', 'maj')}
-        {renderInputField('glosaSeven', 'juni')}
-        {renderInputField('glosaEight', 'juli')}
-        {renderInputField('glosaNine', 'augusti')}
-        {renderInputField('glosaTen', 'september')}
-        {renderInputField('glosaEleven', 'oktober')}
-        {renderInputField('glosaTwelve', 'november')}
-        {renderInputField('glosaThirteen', 'december')}
+        {renderInputField('glosaOne', 'Måndag')}
+        {renderInputField('glosaTwo', 'Tisdag')}
+        {renderInputField('glosaTree', 'Onsdag')}
+        {renderInputField('glosaFour', 'Torsdag')}
+        {renderInputField('glosaFive', 'Fredag')}
+        {renderInputField('glosaSix', 'Lördag')}
+        {renderInputField('glosaSeven', 'Söndag')}
+        {renderInputField('glosaEight', 'Veckodag')}
+        {renderInputField('glosaNine', 'Arbetsdag')}
+        {renderInputField('glosaTen', 'Helg')}
+        {renderInputField('glosaEleven', 'Röd dag')}
+        {renderInputField('glosaTwelve', 'Röd dag')}
+        {renderInputField('glosaThirteen', 'Arbetsdag')}
+
 
         <div className="d-grid">
           <button className="btn btn-success" type="submit" disabled={!form.isValid || form.isSubmitting}>

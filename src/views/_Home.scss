@@ -24,7 +24,11 @@ main{
                 background-color: (#194C67);
                 border: #194C67;
                 margin: 1rem;
-    
+                width: fit-content;
+                @media (min-width: 1200px)
+                {
+                    width: 6rem;
+                }
                 
             }
         }

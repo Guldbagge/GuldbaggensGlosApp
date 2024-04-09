@@ -5,21 +5,21 @@ import { Link } from 'react-router-dom';
 import Cat from '../../assets/image/cat.jpg';
 
 const Home = () => {
-  const glosaOneExpression = "what's the weather like";
-  const glosaTwoExpression = "spring";
-  const glosaTreeExpression = "summer";
-  const glosaFourExpression = "autumn";
-  const glosaFiveExpression = "fall";
-  const glosaSixExpression = "winter";
-  const glosaSevenExpression = "season";
-  const glosaEightExpression = "blow";
-  const glosaNineExpression = "grow";
-  const glosaTenExpression = "throw";
-  const glosaElevenExpression = "window";
-  const glosaTwelveExpression = "inside";
-  const glosaThirteenExpression = "watch";
-  // const glosaFourteenExpression = "window";
-  // const glosaFifteenExpression = "inside";
+  const glosaOneExpression = "ever";
+  const glosaTwoExpression = "skater";
+  const glosaTreeExpression = "fast";
+  const glosaFourExpression = "tough";
+  const glosaFiveExpression = "whole";
+  const glosaSixExpression = "card";
+  const glosaSevenExpression = "sell";
+  const glosaEightExpression = "stick";
+  const glosaNineExpression = "insted";
+  const glosaTenExpression = "already";
+  const glosaElevenExpression = "defence";
+  const glosaTwelveExpression = "lose";
+  const glosaThirteenExpression = "teammate";
+  const glosaFourteenExpression = "score";
+  const glosaFifteenExpression = "bet";
   // const glosaSixteenExpression = "watch";
   
 
@@ -38,8 +38,8 @@ const Home = () => {
     glosaEleven: new RegExp(glosaElevenExpression, "i"),
     glosaTwelve: new RegExp(glosaTwelveExpression, "i"),
     glosaThirteen: new RegExp(glosaThirteenExpression, "i"),
-    // glosaFourteen: new RegExp(glosaFourteenExpression, "i"),
-    // glosaFifteen: new RegExp(glosaFifteenExpression, "i"),
+    glosaFourteen: new RegExp(glosaFourteenExpression, "i"),
+    glosaFifteen: new RegExp(glosaFifteenExpression, "i"),
     // glosaSixteen: new RegExp(glosaSixteenExpression, "i"),
 
   };
@@ -76,8 +76,8 @@ const Home = () => {
       glosaEleven: '',
       glosaTwelve: '',
       glosaThirteen: '',
-      // glosaFourteen: '',
-      // glosaFifteen: '',
+      glosaFourteen: '',
+      glosaFifteen: '',
       // glosaSixteen: '',
 
     },
@@ -121,12 +121,12 @@ const Home = () => {
       glosaThirteen: Yup.string()
         .required(`Glosa must be specified - ${glosaThirteenExpression}.`)
         .matches(regexExpressions.glosaThirteen, `You must spell correctly: ${glosaThirteenExpression}`),
-        // glosaFourteen: Yup.string()
-      //   .required(`Glosa must be specified - ${glosaFourteenExpression}.`)
-      //   .matches(regexExpressions.glosaFourteen, `You must spell correctly: ${glosaFourteenExpression}`),
-      // glosaFifteen: Yup.string()
-      //   .required(`Glosa must be specified - ${glosaFifteenExpression}.`)
-      //   .matches(regexExpressions.glosaFifteen, `You must spell correctly: ${glosaFifteenExpression}`),
+        glosaFourteen: Yup.string()
+        .required(`Glosa must be specified - ${glosaFourteenExpression}.`)
+        .matches(regexExpressions.glosaFourteen, `You must spell correctly: ${glosaFourteenExpression}`),
+      glosaFifteen: Yup.string()
+        .required(`Glosa must be specified - ${glosaFifteenExpression}.`)
+        .matches(regexExpressions.glosaFifteen, `You must spell correctly: ${glosaFifteenExpression}`),
       // glosaSixteen: Yup.string()
       //   .required(`Glosa must be specified - ${glosaSixteenExpression}.`)
       //   .matches(regexExpressions.glosaSixteen, `You must spell correctly: ${glosaSixteenExpression}`),
@@ -157,7 +157,7 @@ const Home = () => {
   return (
     <>
       <form onSubmit={handleSubmit} noValidate>
-        <h1>Glosor v 7</h1>
+        <h1>Glosor v 12</h1>
         {isSubmitted && (
           <div className="alert alert-success" tabIndex={-1} ref={successAlertRef} onFocus={() => successAlertRef.current.focus()}>
             <img src={Cat} alt="" />
@@ -166,22 +166,22 @@ const Home = () => {
         )}
         <p className='errorMessage'>{errorMessage}</p>
 
-        {renderInputField('glosaOne', 'Hur är vädret?')}
-        {renderInputField('glosaTwo', 'vår')}
-        {renderInputField('glosaTree', 'sommar')}
-        {renderInputField('glosaFour', 'höst BrE')}
-        {renderInputField('glosaFive', 'höst AmE')}
-        {renderInputField('glosaSix', 'vinter')}
-        {renderInputField('glosaSeven', 'årstid')}
-        {renderInputField('glosaEight', 'blåsa')}
-        {renderInputField('glosaNine', 'växa')}
-        {renderInputField('glosaTen', 'kasta')}
-        {renderInputField('glosaEleven', 'fönster')}
-        {renderInputField('glosaTwelve', 'inomhus')}
-        {renderInputField('glosaThirteen', 'titta')}
-        {/* {renderInputField('glosaFourteen', 'window')}
-        {renderInputField('glosaFifteen', 'inside')}
-        {renderInputField('glosaSixteen', 'watch')} */}
+        {renderInputField('glosaOne', 'någonsin')}
+        {renderInputField('glosaTwo', 'skridskoåkare')}
+        {renderInputField('glosaTree', 'snabb')}
+        {renderInputField('glosaFour', 'tuff')}
+        {renderInputField('glosaFive', 'hela')}
+        {renderInputField('glosaSix', 'samlarkort')}
+        {renderInputField('glosaSeven', 'sälja')}
+        {renderInputField('glosaEight', 'klubba')}
+        {renderInputField('glosaNine', 'i stället')}
+        {renderInputField('glosaTen', 'redan')}
+        {renderInputField('glosaEleven', 'försvara')}
+        {renderInputField('glosaTwelve', 'förlora')}
+        {renderInputField('glosaThirteen', 'lagkammrat')}
+        {renderInputField('glosaFourteen', 'göra mål')}
+        {renderInputField('glosaFifteen', 'slå vad om')}
+        {/* {renderInputField('glosaSixteen', 'watch')} */}
 
 
         <div className="d-grid">
